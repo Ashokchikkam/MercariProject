@@ -13,6 +13,8 @@
 		F9D5895A1F44ED94002C4C27 /* MercariProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9D589581F44ED94002C4C27 /* MercariProject.xcdatamodeld */; };
 		F9D5895C1F44ED94002C4C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D5895B1F44ED94002C4C27 /* Assets.xcassets */; };
 		F9D5895F1F44ED94002C4C27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D5895D1F44ED94002C4C27 /* LaunchScreen.storyboard */; };
+		F9D5896A1F44FBF5002C4C27 /* ModelMercari.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D589691F44FBF5002C4C27 /* ModelMercari.swift */; };
+		F9D5896C1F44FC32002C4C27 /* MercariCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5896B1F44FC32002C4C27 /* MercariCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F9D5895B1F44ED94002C4C27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9D5895E1F44ED94002C4C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9D589601F44ED94002C4C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D589691F44FBF5002C4C27 /* ModelMercari.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelMercari.swift; sourceTree = "<group>"; };
+		F9D5896B1F44FC32002C4C27 /* MercariCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MercariCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		F9D589501F44ED94002C4C27 /* MercariProject */ = {
 			isa = PBXGroup;
 			children = (
+				F9D589661F44FAFE002C4C27 /* Model */,
+				F9D589671F44FB11002C4C27 /* View */,
+				F9D589681F44FB16002C4C27 /* Controller */,
 				F9D589511F44ED94002C4C27 /* AppDelegate.swift */,
-				F9D589531F44ED94002C4C27 /* ViewController.swift */,
 				F9D589551F44ED94002C4C27 /* Main.storyboard */,
 				F9D5895B1F44ED94002C4C27 /* Assets.xcassets */,
 				F9D5895D1F44ED94002C4C27 /* LaunchScreen.storyboard */,
@@ -65,6 +71,30 @@
 				F9D589581F44ED94002C4C27 /* MercariProject.xcdatamodeld */,
 			);
 			path = MercariProject;
+			sourceTree = "<group>";
+		};
+		F9D589661F44FAFE002C4C27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9D589691F44FBF5002C4C27 /* ModelMercari.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F9D589671F44FB11002C4C27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5896B1F44FC32002C4C27 /* MercariCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F9D589681F44FB16002C4C27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F9D589531F44ED94002C4C27 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D589541F44ED94002C4C27 /* ViewController.swift in Sources */,
+				F9D5896A1F44FBF5002C4C27 /* ModelMercari.swift in Sources */,
 				F9D5895A1F44ED94002C4C27 /* MercariProject.xcdatamodeld in Sources */,
 				F9D589521F44ED94002C4C27 /* AppDelegate.swift in Sources */,
+				F9D5896C1F44FC32002C4C27 /* MercariCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

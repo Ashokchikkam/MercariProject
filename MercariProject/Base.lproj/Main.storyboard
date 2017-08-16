@@ -32,7 +32,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HJz-6X-mKB">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HJz-6X-mKB" customClass="MercariCell" customModule="MercariProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="105" height="132"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -63,7 +63,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGG-Gv-unR">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGG-Gv-unR" userLabel="Price">
                                                     <rect key="frame" x="5" y="80" width="30" height="20"/>
                                                     <color key="backgroundColor" red="0.28133217967706281" green="0.28133217967706281" blue="0.28133217967706281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -86,6 +86,12 @@
                                             <constraint firstItem="1tJ-8F-4ee" firstAttribute="top" secondItem="HJz-6X-mKB" secondAttribute="topMargin" constant="-8" id="iO3-Cs-T8J"/>
                                             <constraint firstItem="WG5-5r-2cE" firstAttribute="leading" secondItem="HJz-6X-mKB" secondAttribute="leading" id="nJO-SZ-005"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="mainImageView" destination="1tJ-8F-4ee" id="Kzl-hX-HYj"/>
+                                            <outlet property="price" destination="vGG-Gv-unR" id="46c-Gp-ObG"/>
+                                            <outlet property="soldImageView" destination="fi9-mk-GKZ" id="YYD-oP-KD4"/>
+                                            <outlet property="title" destination="WG5-5r-2cE" id="CSc-wY-ZPP"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -98,6 +104,9 @@
                             <constraint firstItem="EGB-el-h6M" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hkt-Mt-faN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="EGB-el-h6M" id="9kD-Ed-0Wq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
