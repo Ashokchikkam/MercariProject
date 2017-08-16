@@ -24,7 +24,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EGB-el-h6M">
                                 <rect key="frame" x="16" y="20" width="343" height="639"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89099798256975749" green="0.89099798256975749" blue="0.89099798256975749" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dhO-Hx-LOm">
                                     <size key="itemSize" width="105" height="132"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -96,7 +96,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.89099798259999996" green="0.89099798259999996" blue="0.89099798259999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EGB-el-h6M" secondAttribute="bottom" constant="8" symbolic="YES" id="9Qm-CX-iVG"/>
                             <constraint firstItem="EGB-el-h6M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RV0-Uq-t27"/>
