@@ -39,7 +39,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="132"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1tJ-8F-4ee" userLabel="MainImageView">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1tJ-8F-4ee" userLabel="MainImageView" customClass="RoundedImageView" customModule="MercariProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="105" id="gz2-LH-Edb"/>
@@ -63,9 +63,9 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGG-Gv-unR" userLabel="Price">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGG-Gv-unR" userLabel="Price" customClass="RoundedLabel" customModule="MercariProject" customModuleProvider="target">
                                                     <rect key="frame" x="5" y="80" width="30" height="20"/>
-                                                    <color key="backgroundColor" red="0.28133217967706281" green="0.28133217967706281" blue="0.28133217967706281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.18736406419482932" green="0.18736406419482932" blue="0.18736406419482932" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="LRJ-Gu-ujD"/>
                                                         <constraint firstAttribute="width" constant="30" id="VsX-86-0uE"/>

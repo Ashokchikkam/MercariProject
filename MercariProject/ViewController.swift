@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import Alamofire
 
-class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
+class ViewController: UIViewController, NSFetchedResultsControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -19,10 +19,80 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
         attemptFetch()
         loadData()
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if let objs = controller.fetchedObjects , objs.count > 0 {
+            print("number of objects in collection: \(objs.count)")
+            return objs.count
+        }
+        print("returning zero number of items.")
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MercariCell", for: indexPath) as? MercariCell
+        
+        let obj = controller.object(at: indexPath)
+        var modelMercari: ModelMercari?
+        var image: UIImage?
+        
+        if let photo = obj.photo{
+            print("loading photo from the DB")
+            image = UIImage(data: photo as Data)
+            
+            //obj.photo = NSData(data: UIImageJPEGRepresentation(image!, 1)!)
+            
+            modelMercari = ModelMercari(mainImage: image!, soldState: obj.soldState, price: String(obj.amount), title: obj.title!)
+            print("sold state:\(obj.soldState)")
+            
+            cell?.updateUI(modelMercari: modelMercari!)
+            
+        }
+        else{
+            
+            print("loading photo form the web")
+            let url = URL(string: obj.imageUrl!)
+            //print("url value: \(String(describing: obj.imageURL))")
+            
+            DispatchQueue.global().async {
+                do {
+                    let data = try Data(contentsOf: url!)
+                    //print("data value: \(data)")
+                    image = UIImage(data: data)
+                    
+                    DispatchQueue.main.async
+                        {
+                            obj.photo = NSData(data: UIImageJPEGRepresentation(image!, 1)!)
+                            
+                            modelMercari = ModelMercari(mainImage: image!, soldState: obj.soldState, price: String(obj.amount), title: obj.title!)
+                            
+                            cell?.updateUI(modelMercari: modelMercari!)
+                    }
+                    
+                } catch  {
+                    //handle the error
+                }
+            }
+            
+        }
+        
+        
+        
+        return cell!
+        
     }
 
     private func attemptFetch() {

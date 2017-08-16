@@ -18,6 +18,8 @@
 		F9D5896C1F44FC32002C4C27 /* MercariCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5896B1F44FC32002C4C27 /* MercariCell.swift */; };
 		F9D5896E1F44FF8A002C4C27 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5896D1F44FF8A002C4C27 /* Constants.swift */; };
 		F9D589701F450104002C4C27 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = F9D5896F1F450104002C4C27 /* all.json */; };
+		F9D589781F450646002C4C27 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D589771F450646002C4C27 /* RoundedImageView.swift */; };
+		F9D5897A1F45065B002C4C27 /* RoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D589791F45065B002C4C27 /* RoundedLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		F9D5896B1F44FC32002C4C27 /* MercariCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MercariCell.swift; sourceTree = "<group>"; };
 		F9D5896D1F44FF8A002C4C27 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F9D5896F1F450104002C4C27 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
+		F9D589771F450646002C4C27 /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		F9D589791F45065B002C4C27 /* RoundedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				F9D5896B1F44FC32002C4C27 /* MercariCell.swift */,
+				F9D589771F450646002C4C27 /* RoundedImageView.swift */,
+				F9D589791F45065B002C4C27 /* RoundedLabel.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 				F9D589521F44ED94002C4C27 /* AppDelegate.swift in Sources */,
 				F9D5896C1F44FC32002C4C27 /* MercariCell.swift in Sources */,
 				F9D5896E1F44FF8A002C4C27 /* Constants.swift in Sources */,
+				F9D5897A1F45065B002C4C27 /* RoundedLabel.swift in Sources */,
+				F9D589781F450646002C4C27 /* RoundedImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
