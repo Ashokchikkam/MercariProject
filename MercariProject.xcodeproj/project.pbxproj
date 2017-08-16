@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D40F644A4BE34C4101BC431 /* Pods_MercariProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867D0AA743A0470ACE9C254C /* Pods_MercariProject.framework */; };
 		F9D589521F44ED94002C4C27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D589511F44ED94002C4C27 /* AppDelegate.swift */; };
 		F9D589541F44ED94002C4C27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D589531F44ED94002C4C27 /* ViewController.swift */; };
 		F9D589571F44ED94002C4C27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D589551F44ED94002C4C27 /* Main.storyboard */; };
@@ -15,9 +16,14 @@
 		F9D5895F1F44ED94002C4C27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D5895D1F44ED94002C4C27 /* LaunchScreen.storyboard */; };
 		F9D5896A1F44FBF5002C4C27 /* ModelMercari.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D589691F44FBF5002C4C27 /* ModelMercari.swift */; };
 		F9D5896C1F44FC32002C4C27 /* MercariCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5896B1F44FC32002C4C27 /* MercariCell.swift */; };
+		F9D5896E1F44FF8A002C4C27 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5896D1F44FF8A002C4C27 /* Constants.swift */; };
+		F9D589701F450104002C4C27 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = F9D5896F1F450104002C4C27 /* all.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06585558B7DAD1BA29733905 /* Pods-MercariProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercariProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MercariProject/Pods-MercariProject.debug.xcconfig"; sourceTree = "<group>"; };
+		867D0AA743A0470ACE9C254C /* Pods_MercariProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercariProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		957618C259468B1AB5C47F73 /* Pods-MercariProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercariProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MercariProject/Pods-MercariProject.release.xcconfig"; sourceTree = "<group>"; };
 		F9D5894E1F44ED94002C4C27 /* MercariProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercariProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D589511F44ED94002C4C27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9D589531F44ED94002C4C27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +34,8 @@
 		F9D589601F44ED94002C4C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9D589691F44FBF5002C4C27 /* ModelMercari.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelMercari.swift; sourceTree = "<group>"; };
 		F9D5896B1F44FC32002C4C27 /* MercariCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MercariCell.swift; sourceTree = "<group>"; };
+		F9D5896D1F44FF8A002C4C27 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F9D5896F1F450104002C4C27 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D40F644A4BE34C4101BC431 /* Pods_MercariProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4405E496FB6C3EE40468EF64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06585558B7DAD1BA29733905 /* Pods-MercariProject.debug.xcconfig */,
+				957618C259468B1AB5C47F73 /* Pods-MercariProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		537F977AB0BEF5DE2AE4E5D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				867D0AA743A0470ACE9C254C /* Pods_MercariProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F9D589451F44ED94002C4C27 = {
 			isa = PBXGroup;
 			children = (
 				F9D589501F44ED94002C4C27 /* MercariProject */,
 				F9D5894F1F44ED94002C4C27 /* Products */,
+				4405E496FB6C3EE40468EF64 /* Pods */,
+				537F977AB0BEF5DE2AE4E5D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,10 +93,12 @@
 				F9D589681F44FB16002C4C27 /* Controller */,
 				F9D589511F44ED94002C4C27 /* AppDelegate.swift */,
 				F9D589551F44ED94002C4C27 /* Main.storyboard */,
+				F9D5896D1F44FF8A002C4C27 /* Constants.swift */,
 				F9D5895B1F44ED94002C4C27 /* Assets.xcassets */,
 				F9D5895D1F44ED94002C4C27 /* LaunchScreen.storyboard */,
 				F9D589601F44ED94002C4C27 /* Info.plist */,
 				F9D589581F44ED94002C4C27 /* MercariProject.xcdatamodeld */,
+				F9D5896F1F450104002C4C27 /* all.json */,
 			);
 			path = MercariProject;
 			sourceTree = "<group>";
@@ -104,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9D589631F44ED94002C4C27 /* Build configuration list for PBXNativeTarget "MercariProject" */;
 			buildPhases = (
+				A1AE4E209435C3828AA12209 /* [CP] Check Pods Manifest.lock */,
 				F9D5894A1F44ED94002C4C27 /* Sources */,
 				F9D5894B1F44ED94002C4C27 /* Frameworks */,
 				F9D5894C1F44ED94002C4C27 /* Resources */,
+				A98023EE0526533D840B4707 /* [CP] Embed Pods Frameworks */,
+				DF65669C6C5CECC540512906 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,12 +191,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D5895F1F44ED94002C4C27 /* LaunchScreen.storyboard in Resources */,
+				F9D589701F450104002C4C27 /* all.json in Resources */,
 				F9D5895C1F44ED94002C4C27 /* Assets.xcassets in Resources */,
 				F9D589571F44ED94002C4C27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1AE4E209435C3828AA12209 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A98023EE0526533D840B4707 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MercariProject/Pods-MercariProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF65669C6C5CECC540512906 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MercariProject/Pods-MercariProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F9D5894A1F44ED94002C4C27 /* Sources */ = {
@@ -175,6 +257,7 @@
 				F9D5895A1F44ED94002C4C27 /* MercariProject.xcdatamodeld in Sources */,
 				F9D589521F44ED94002C4C27 /* AppDelegate.swift in Sources */,
 				F9D5896C1F44FC32002C4C27 /* MercariCell.swift in Sources */,
+				F9D5896E1F44FF8A002C4C27 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +378,7 @@
 		};
 		F9D589641F44ED94002C4C27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06585558B7DAD1BA29733905 /* Pods-MercariProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VLW59PB552;
@@ -308,6 +392,7 @@
 		};
 		F9D589651F44ED94002C4C27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 957618C259468B1AB5C47F73 /* Pods-MercariProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VLW59PB552;
@@ -338,6 +423,7 @@
 				F9D589651F44ED94002C4C27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
